@@ -26,3 +26,11 @@ Run the following command to run startup migrations.
 ```js
 adonis migration:run
 ```
+
+#### EXTRAS
+
+Para criar um model junto com um migration e com o controller.
+
+```js
+adonis make:model Tweet -m -c
+```
