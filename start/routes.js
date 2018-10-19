@@ -24,3 +24,9 @@ Route.get('/app', "AppController.index").middleware(['auth'])
 Route.get('/', () => {
   return { greeting: 'AQUI NAO TEM NADA!' }
 })
+
+Route.group(() => {
+  Route.resource('tweets', 'TweetController')
+  .apiOnly()
+  .except('update')
+}).middleware('auth')
