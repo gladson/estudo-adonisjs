@@ -29,8 +29,26 @@ adonis migration:run
 
 #### EXTRAS
 
-Para criar um model junto com um migration e com o controller.
+##### Create Model + Migration + Controller
+
+To create a model together with a migration and the controller.
 
 ```js
 adonis make:model Tweet -m -c
+```
+
+##### Create Seeds and Hooks
+
+To create seeds and hooks.
+
+Reference seeds: [ChanceJs](https://chancejs.com)
+
+```js
+adonis make:seed User
+adonis make:seed Tweet
+```
+
+```js
+adonis make:hook User
+adonis make:hook Tweet
 ```
